@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Профиль — bs</title>
+<script>try{document.documentElement.dataset.theme=JSON.parse(localStorage.getItem('theme'))||'dark'}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="profile">
+<header class="site"><div class="wrap">
+<div class="hdr-top d-only"><button data-lang>🇷🇺 Рубли (RUB) · Русский</button><button data-sell>Начать продавать</button></div>
+<div class="hdr"><a class="brand" href="index.html"><b>bs</b></a>
+<button class="cat-btn d-only" data-drop="catmenu">☰&nbsp; Каталог</button>
+<label class="search"><span class="muted" style="font-size:20px">⌕</span><input id="q" placeholder="Найти товар" autocomplete="off"></label>
+<div class="icons d-only"><a class="ibtn" href="favorites.html" data-nav="favorites"><span>♡</span>Избранное<i class="cnt" data-cnt="fav"></i></a><a class="ibtn" href="orders.html" data-nav="orders"><span>📦</span>Заказы<i class="cnt" data-cnt="ord"></i></a><button class="ibtn" data-drop="profmenu" data-nav="profile"><span>👤</span>Профиль</button></div></div>
+<div class="cats d-only"><a href="index.html?cat=Подписки" data-cat="Подписки"><i>🎮</i>Xbox Game Pass</a><a href="index.html?cat=PlayStation" data-cat="PlayStation"><i>🎯</i>Пополнение PSN</a><a href="index.html?cat=Пополнение" data-cat="Пополнение"><i>💳</i>Пополнение Steam</a><a href="index.html?cat=Игры" data-cat="Игры"><i>🕹️</i>Игры</a><a href="index.html?cat=Карты" data-cat="Карты"><i>🎁</i>Подарочные карты</a><a href="index.html" data-cat=""><i>%</i>Скидки 90%</a><a href="index.html" data-cat=""><i>💎</i>Донат</a></div>
+</div></header>
+<div class="drop" id="catmenu"></div><div class="drop" id="profmenu"></div>
+<main><div class="wrap page-narrow"><div id="profile"></div></div></main>
+<footer class="site"><div class="wrap"><span>© 2026 bs · магазин цифровых товаров</span>
+<nav><button data-info="about">О нас</button><button data-support>Поддержка</button><button data-info="terms">Условия</button><button data-info="refund">Возврат</button><button data-info="privacy">Конфиденциальность</button></nav></div></footer>
+<nav class="nav m-only"><a href="index.html" data-nav="index"><span>⌂</span>главная</a><button id="m-cat"><span>▦</span>каталог</button><a href="orders.html" data-nav="orders"><span>📦</span>заказы<i class="cnt" data-cnt="ord"></i></a><a href="favorites.html" data-nav="favorites"><span>♡</span>избранное<i class="cnt" data-cnt="fav"></i></a><a href="profile.html" data-nav="profile"><span>👤</span>профиль</a></nav>
+<button class="sup-fab" id="sup-fab"><span>💬</span>Поддержка</button>
+<div class="sup" id="sup"><div class="sup-h">💬 Поддержка bs<button id="sup-close">✕</button></div>
+<div class="sup-msgs" id="sup-msgs"></div>
+<div class="sup-f"><input id="sup-mail" type="email" placeholder="✉ Э-почта"><textarea id="sup-text" placeholder="Ваш вопрос (Ctrl+Enter — отправить)"></textarea><button class="btn" id="sup-send">Отправить</button></div></div>
+<div class="modal-bg" id="modal"></div>
+<script src="app.js"></script></body></html>
